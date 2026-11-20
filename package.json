@@ -1,0 +1,29 @@
+{
+  "name": "nazhir-reach",
+  "version": "0.1.0",
+  "description": "Sharia-Compliant Campaign Distribution, Wakif Retention Flywheel & PSAK 412/109 Impact Attribution Suite for Indonesian Waqf Nazhir & Zakat LAZ",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "node --no-warnings --import tsx src/index.ts",
+    "demo": "node --no-warnings --import tsx src/demo.ts",
+    "build": "tsc",
+    "start": "node --no-warnings dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint:copy": "node --no-warnings --import tsx src/linter/cli.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.1",
+    "hono": "^4.7.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
